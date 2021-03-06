@@ -25,14 +25,29 @@ action.perform()
 
 # TouchAction方法，案例：test_TouchAction.py
 
-链接：https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.touch_actions.html
+[TouchAction语法链接](https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.touch_actions.html)  
 一.类似于ActionChains，ActionChains只是针对PC端程序鼠标模拟的一系列操作，对于H5页面操作是无效的，
-TouchAction可以对H5页面操作，通过TouchAction可以实现点击，滑动，拖拽，多点触控，以及模拟手势的各种操作 二.手势控制 tap---在指定元素上敲击 double_tap---在指定元素上双击
-tap_and_hold---在指定元素上点击但不释放 move---手势移动指定偏移（未释放） release---释放手势 scroll---手势点击并滚动
-scroll_from_element---从某个元素位置开始手势点击并滚动（向下滑动为附属，向上滑动为正数） long_press---长按元素 flick---手势滑动
-flick_element---从某个元素位置开始手势滑动（向上滑动为负数，向下滑动为正数） Perform---执行
+TouchAction可以对H5页面操作，通过TouchAction可以实现点击，滑动，拖拽，多点触控，以及模拟手势的各种操作  
+二.手势控制
+
+* tap---在指定元素上敲击
+* double_tap---在指定元素上双击
+* tap_and_hold---在指定元素上点击但不释放
+* move---手势移动指定偏移（未释放）
+* release---释放手势
+* scroll---手势点击并滚动
+* scroll_from_element---从某个元素位置开始手势点击并滚动（向下滑动为附属，向上滑动为正数）
+* long_press---长按元素 flick---手势滑动
+* flick_element---从某个元素位置开始手势滑动（向上滑动为负数，向下滑动为正数）
+* Perform---执行
 
 # 表单定义，案例：test_form.py
 
-一.什么是表单？ 表单是一个包含表单元素的区域 表单元素是允许用户在表单中（比如：文本域、下拉列表、单选框、复选框等等）输入信息的元素 表单使用表单标签（<form>）定义。例如：<from><input/></from>
+一.什么是表单？ 表单是一个包含表单元素的区域 表单元素是允许用户在表单中（比如：文本域、下拉列表、单选框、复选框等等）输入信息的元素 表单使用表单标签（<form>）定义。
+
+* 例如：
+  ```html
+    <from><input/></from>  
+  ```
+
 二.操作表单元素步骤： 首先要定位到表单元素 然后去操作元素（清空、输入或者点击等）
